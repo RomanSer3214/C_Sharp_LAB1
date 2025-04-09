@@ -1,0 +1,49 @@
+﻿<Window x:Class="FirstWPFApp.ThirdWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstWPFApp"
+        mc:Ignorable="d"
+        Title="Калькулятор" Height="650" Width="376" Background="#808080" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="85"/>
+            <ColumnDefinition Width="85"/>
+            <ColumnDefinition Width="85"/>
+            <ColumnDefinition Width="85"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="OutputText" Text="0" Margin="8"  FontSize="42" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" TextAlignment="Right" VerticalAlignment="Bottom"/>
+        <Border BorderBrush="DimGray" BorderThickness="1" Height="80" Width="340" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
+        <Button x:Name="PlusButton" Content="+" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="5" Grid.Column="3"/>
+        <Button x:Name="DotButton" Content="." Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="5" Grid.Column="2"/>
+        <Button x:Name="ZeroButton" Content="0" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="5" Grid.Column="1"/>
+        <Button x:Name="ChangeSignButton" Content="+/-" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="5" Grid.Column="0"/>
+        <Button x:Name="MinusButton" Content="-" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="4" Grid.Column="3"/>
+        <Button x:Name="ThreeButton" Content="3" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="4" Grid.Column="2"/>
+        <Button x:Name="TwoButton" Content="2" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="4" Grid.Column="1"/>
+        <Button x:Name="OneButton" Content="1" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="4" Grid.Column="0"/>
+        <Button x:Name="MultiplyButton" Content="×" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="3" Grid.Column="3"/>
+        <Button x:Name="SixButton" Content="6" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="3" Grid.Column="2"/>
+        <Button x:Name="FiveButton" Content="5" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="3" Grid.Column="1"/>
+        <Button x:Name="FourButton" Content="4" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="3" Grid.Column="0"/>
+        <Button x:Name="DivideButton" Content="÷" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="2" Grid.Column="3"/>
+        <Button x:Name="NineButton" Content="9" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="2" Grid.Column="2"/>
+        <Button x:Name="EightButton" Content="8" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="2" Grid.Column="1"/>
+        <Button x:Name="SevenButton" Content="7" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="2" Grid.Column="0"/>
+        <Button x:Name="ClearEntryButton" Content="CE" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="1" Grid.Column="3"/>
+        <Button x:Name="ClearButton" Content="C" Background="#808080" Click="CalcButton_Click" FontSize="36" Grid.Row="1" Grid.Column="2"/>
+        <Button x:Name="EqualsButton" Content="=" Background="#808080" Click="EqualsButton_Click" FontSize="36" Grid.Row="1" Grid.Column="1"/>
+        <Border BorderBrush="DimGray" BorderThickness="1" Grid.Row="1" Grid.Column="0"/>
+        <Button x:Name="GoToMainWin" Content="До головного вікна" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top" Width="140" Height="60" Background="#FF3AEC7B" Click="GoToMainWin_Click" RenderTransformOrigin="0.674,2.717" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="6"/>
+    </Grid>
+</Window>
